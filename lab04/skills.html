@@ -4,107 +4,60 @@
         <head>
             <meta charset = "utf-8">
             <title>Fernandez Skills</title>
-            <style>
-                td, th {border:1px solid black;}
-            </style>
+            <link rel="stylesheet" href="styles.css">
+        
         </head>
         <body>
+            <nav><a href="../lab07/index.html">Home</a> <span>&#124;</span>
+                <a href="../lab04/skills.html">Skills</a> <span>&#124;</span>
+                <a href="../lab03/contact.html">Contact</a>
 
-            <table>
-                <caption>Skill List</caption>
-                <tr>
-                    <th>Category</th> <!-- headings don't have to be at top -->
-                    <th>Skill</th>
-                    <th>Compentancy Level</th>
-                </tr>
-                <tr>
-                    <td>Coding</td>
-                    <td>Python</td>
-                    <td>Proficient</td>
-                </tr>
-                <tr>
-                    <td>Coding</td>
-                    <td>HTML</td>
-                    <td>Proficient</td>
-                </tr>
-                <tr>
-                    <td>Communication</td>
-                    <td>Team building</td>
-                    <td>Advanced</td>
-                </tr>
-                <tr>
-                    <td>Time</td>
-                    <td>Scheduling</td>
-                    <td>Proficient</td>
-                </tr>
-                <tr>
-                    <td>Art</td>
-                    <td>Graphic Design</td>
-                    <td>Excellence</td>
-                </tr>
-                <tr>
-                    <td>Creativity</td>
-                    <td>Brainstorming Ideas</td>
-                    <td>Proficient</td>
-                </tr>
-                <tr>
-                    <td>Coding</td>
-                    <td>Haskell</td>
-                    <td>Proficient</td>
-                </tr>
-                <tr>
-                    <td>Sport</td>
-                    <td>Baseball</td>
-                    <td>Advanced</td>
-                </tr>
-                <tr>
-                    <td>Dancing</td>
-                    <td>Bachata</td>
-                    <td>Excellence</td>
-                </tr>
-                <tr>
-                    <td>Fitness</td>
-                    <td>Weight Lifting </td>
-                    <td>Excellence</td>
-                </tr>
-            </table>
-
-            <h2>Forms</h2>
-
-            <form action="https://formspree.io/f/mqkvyyyr" method="POST">
-                <label for="questions">Any Questions?</label><br>
-                <textarea id="questions" name="questions" rows="3" cols="30"></textarea><br>
-               
-                <br>
-                <br>
-                <br> 
-
-                <label>Favorite Sport?</label><br>
-                <select id="Sport" name="Sport">
-                    <option>Select an Option</option>
-                    <option value="baseball">Baseball</option>
-                    <option value="baseketball">Basketball</option>
-                    <option value="football">Football</option>
-                    <option value="soccer">Soccer</option>
-                    <option value="tennis">Tennis</option>
-                    <option value="badminton">Badminton</option>
-                    <option value="icehockey">Ice Hockey</option>
-                    <option value="volleyball">Volleyball</option>
-                    <option value="lacross">Lacross</option>
-                </select><br><br>
-
-                    <label>Your email: <input type="email" name="email"> </label><br>
-
-
-                <input type="submit" value="send form">
+            <header>
+                <h1 class="centered">Technical Skills</h1>
+            </header>
+            <section class="intro">
+                <p>I want to focus my career to developing applications and website. I also have a passion with video creation of workouts and social media.</p>
+            </section>
+            <main>
+                <div class="skills-container">
                 
-            
-                
-            
-            </form>
-             <br>
-             <br>
-            <a href="../lab03/Fernandez-bio.html">Contact</a> 
+                    <div class="skill">
+                        <i class="Web Development"></i>
+                        <img src="../images/code-solid (1).svg" alt="Web Development Icon" width="75" height="60">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill">
+                        <img src="../images/linux.svg" alt="Linux Icon" width="65" height="50">
+                        <i class="Linux"></i>
+                        <p>Linux</p>
+                    </div>
+                    <div class="skill">
+                        <img src="../images/python.svg" alt="Python Icon" width="65" height="50">
+                        <i class="Python"></i>
+                        <p>Python</p>
+                    </div>
+                    <div class="skill">
+                        <img src="../images/github.svg" alt="Github Icon" width="65" height="50">
+                        <i class=""></i>
+                        <p>Github</p>
+                    </div>
+                    <div class="skill">
+                        <img src="../images/js.svg" alt="JavaScript Icon" width="65" height="50">
+                        <i class="JavaScript"></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <aside>
+                    <h2>Other Skills</h2>
+                    <ul class="aside-skills">
+                        <li>Microsoft Word</li>
+                        <li>Excel</li>
+                        <li>Graphic Design</li>
+                        <li>Video Creation</li>
+                        <li>Social Media</li>
+                    </ul>
+                </aside>
+            </main>
 
         </body>
 
