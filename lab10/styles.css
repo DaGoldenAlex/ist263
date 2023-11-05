@@ -14,3 +14,24 @@ nav a {
     padding: 5px;
     background-color: #2e1414; 
     justify-content: space-around;}
+   
+    nav a {
+        width: 100%;
+        display: block;
+    }
+
+    
+    .responsive-image {
+        max-width: 100%;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 768px) {
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
