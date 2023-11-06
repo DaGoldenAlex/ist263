@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-    
     <html lang="en">
-        <head>
-            <meta charset="8">
-            <title>Fitness Spec</title>
-            <input type="radio" id="Ratio" Name="BMI">
-            <label for="Ratio">BMI</label><br>
-            <input type="submit" value=" Here">
-        </head>
-    </html>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Spec</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <style>
+        footer {
+            text-align: left;
+        }
     
+        #tagline {
+            float: right;
+            margin-right: 9px; 
+        }
+       
+    </style>
+
+</head>
+<body>
+  
+    <main>
+        <input type="radio" id="Option1" Name="Choice 1">
+        <label for="Option1">Choice 1</label>
+        <input type="radio" id="Option2" Name="Choice 2">
+        <label for="Option2">Choice2</label><br>
+        <input type="submit" value="Send form"> <br>
+        <textarea id="Questions" name="Questions" rows="3" cols="30"></textarea>
+    </main>
+    <footer>
+    <hr>
+    <p>&copy;2023 <span id="tagline">Coding like poetry should be short and concise. ― Santosh Kalwar</span></p>
+    </footer>
+</body>
+</html>
