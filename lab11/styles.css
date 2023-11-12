@@ -6,9 +6,9 @@ nav a:hover {color: #530303e7;}
 nav a:hover {background-color: #957700;}
 nav a:active {color:#392602;}
 a:visited {color:#bf9900};
-a:link {color: #F7C94B}
-nav {margin-bottom:30px}
-nav {padding:10px}
+a:link {color: #F7C94B;}
+nav {margin-bottom:30px;}
+nav {padding:10px;}
 nav a {
     margin: 1px;
     padding: 5px;
