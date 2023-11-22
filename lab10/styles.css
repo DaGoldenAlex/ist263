@@ -1,8 +1,8 @@
 h1, h2, h3 {color: #5d4000;}
 p, li {color: #5d4000;}
 body {background-color: #DB8B00;}
-td, th {border:1px solid black;}
-nav a:hover {color: #530303e7;}
+td, th {border:1px solid #000000;}
+nav a:hover {color: #530303e6;}
 nav a:hover {background-color: #957700}
 nav a:active {color:#392602}
 a:visited {color:#bf9900}
