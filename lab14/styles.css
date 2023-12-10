@@ -1,0 +1,45 @@
+footer {
+    text-align: left;
+}
+
+#tagline {
+    float: right;
+    margin-right: 9px; 
+}
+
+h1, h2, h3 {color: #000000;}
+p, li {color:#f5da6fe7}
+body {background-color: #08dde8;}
+td, th {border:1px solid black;}
+nav a:hover {color: #03534fe7;}
+nav a:hover {background-color: #890095}
+nav a:active {color:#066290}
+a:visited {color:#004cbf}
+a:link {color:#038e75}
+nav {margin-bottom:30px}
+nav {padding:10px}
+nav a {
+margin: 1px;
+padding: 5px;
+background-color: #2e1414; 
+justify-content: space-around;}
+
+nav a {
+width: 100%;
+}
+
+
+.responsive-image {
+max-width: 100%;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+}
+
+nav a {
+margin: 5px 0;
+}
