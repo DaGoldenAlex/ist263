@@ -20,31 +20,6 @@
 
 
     </style>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var video = document.getElementById('autoplayVideo');
-
-        // Set the video to play when it becomes visible
-        var options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5
-        };
-
-        var callback = function (entries, observer) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            });
-        };
-
-        var observer = new IntersectionObserver(callback, options);
-        observer.observe(video);
-    });
-</script>
 </head>
 <body>
     <header>
@@ -52,7 +27,7 @@
         <nav>
             <ul>
                 <li><a href="Home.html">Home</a></li>
-                <li><a href="Exercise.html">Workouts</a></li>
+                <li><a href="Excercise.html">Workouts</a></li>
                 <li class="dropdown">
                     <a href="Nutrition.html" class="dropbtn">Nutrition</a>
                     <div class="dropdown-content">
@@ -72,7 +47,7 @@
     <main class="main-content">
         <section id="home">
             <h1>Welcome to Fitness Spec!</h1>
-            <p>Your journey to a healthier lifestyle starts here. </p>
+            <p>Your journey to a healthier lifestyle starts here with Fitness Spec. </p>
         </section>
 
         <section id="exercise">
