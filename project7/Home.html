@@ -7,6 +7,43 @@
     <title>Fitness Spec</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+     
+
+     video {
+            width: 70%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
+        }
+
+
+    </style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var video = document.getElementById('autoplayVideo');
+
+        // Set the video to play when it becomes visible
+        var options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        var callback = function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        };
+
+        var observer = new IntersectionObserver(callback, options);
+        observer.observe(video);
+    });
+</script>
 </head>
 <body>
     <header>
@@ -28,10 +65,11 @@
         </section>
 
         <section id="exercise">
-            <h2>Exercise</h2>
             <div class="content-container">
                 <div class="image-section">
-                    <img src="exercise_image.jpg" alt="Exercise Image">
+                    <video width="640" height="360" controls>
+                        <source src="Excercise.mp4" type="video/mp4" alt="Excercise Animation">
+                    </video>
                 </div>
                 <div class="description-section">
                     <p>Regular exercise is crucial for maintaining good health. It helps improve cardiovascular health, build muscle strength, and boost overall well-being. Incorporate a mix of cardio, strength training, and flexibility exercises into your routine for optimal results.</p>
@@ -40,29 +78,32 @@
         </section>
 
         <section id="nutrition">
-            <h2>Nutrition</h2>
             <div class="content-container">
                 <div class="description-section">
                     <p>Proper nutrition plays a key role in supporting your fitness goals. Focus on a balanced diet that includes a variety of fruits, vegetables, lean proteins, and whole grains. Stay hydrated and be mindful of portion sizes to fuel your body effectively.</p>
                 </div>
                 <div class="image-section">
-                    <img src="nutrition_image.jpg" alt="Nutrition Image">
+                    <video width="640" height="360" controls>
+                        <source src="Nutrition.mp4" type="video/mp4" alt="Nutrition Animation">
+                    </video>
                 </div>
             </div>
         </section>
 
         <section id="sleep">
-            <h2>Sleep</h2>
             <div class="content-container">
                 <div class="image-section">
-                    <img src="sleep_image.jpg" alt="Sleep Image">
+                    <video width="640" height="360" controls>
+                        <source src="Sleep.mp4" type="video/mp4" alt="Sleep Animation">
+                    </video>
                 </div>
                 <div class="description-section">
-                    <p>Quality sleep is essential for recovery and overall health. Aim for 7-9 hours of uninterrupted sleep each night. Create a relaxing bedtime routine, maintain a comfortable sleep environment, and prioritize consistent sleep patterns to enhance your well-being.</p>
+                    <p>Quality sleep is essential for recovery and overall health. Aim for 7-9 hours of uninterrupted sleep each night. Create a relaxing bedtime routine, maintain a comfortable sleep environment, and prioritize consistent sleep patterns to enhance your well-being.<p>
                 </div>
             </div>
         </section>
-
+        
+       <div class="sub">
         <section>
             <H1>Subscribe for updates:</h1>
             <form action="subscribe.php" method="post">
@@ -71,6 +112,7 @@
                 <button type="submit">Subscribe</button>
             </form>
         </section>
+        </div>
 
     </main>
 

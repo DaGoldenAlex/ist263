@@ -2,12 +2,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ff0000; /* Red background color */
-    color: #ffffff; /* White text color */
+    background-color: #ff0000; 
+    color: #ffffff; 
 }
 
 header {
-    background-color: #990000; /* Darker red for header background */
+    background-color: #990000; 
     color: white;
     padding: 1rem;
     text-align: center;
@@ -28,17 +28,17 @@ nav ul li a {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 15px; 
+    transition: background-color 0.3s; 
 }
 
 nav ul li a:hover {
-    background-color: #ffffff; /* White background on hover */
-    color: #ff0000; /* Red text on hover */
+    background-color: #ffffff; 
+    color: #ff0000; 
 }
 
 nav ul li:not(:last-child):after {
-    content: '|'; /* Vertical line separator */
+    content: '|'; 
     margin: 0 10px;
     color: #ffffff;
 }
@@ -47,7 +47,6 @@ nav ul li:not(:last-child):after {
     padding: 20px;
 }
 
-/* Health Importance Sections */
 section {
     margin-bottom: 40px;
 }
@@ -67,17 +66,16 @@ section {
 .image-section img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px; /* Rounded corners for images */
+    border-radius: 5px; 
 }
 
 footer {
-    background-color: #990000; /* Darker red for footer background */
+    background-color: #990000; 
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
-/* Add more CSS rules for different sections and elements as needed */
 img {
     max-width: 20%;
     height: auto;
