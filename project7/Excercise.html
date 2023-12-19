@@ -15,35 +15,85 @@
         <nav>
             <ul>
                 <li><a href="Home.html">Home</a></li>
-                <li><a href="Exercise.html">Workouts</a></li>
+                <li><a href="Excercise.html">Workouts</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropbtn">Nutrition</a>
+                    <a href="Nutrition.html" class="dropbtn">Nutrition</a>
                     <div class="dropdown-content">
-                        <a href="#protein">Protein</a>
-                        <a href="#carbohydrates">Carbohydrates</a>
-                        <a href="#caffeine">Caffeine</a>
-                        <a href="#fats">Fats</a>
-                        <a href="#sugar">Sugar</a>
-                        <a href="#sodium">Sodium</a>
-                        <a href="#fruits-vegetables">Fruits & Vegetables</a>
+                        <a href="Nutrition.html#protein">Protein</a>
+                        <a href="Nutrition.html#carbohydrates">Carbohydrates</a>
+                        <a href="Nutrition.html#caffeine">Caffeine</a>
+                        <a href="Nutrition.html#fats">Fats</a>
+                        <a href="Nutrition.html#sugar">Sugar</a>
+                        <a href="Nutrition.html#sodium">Sodium</a>
+                        <a href="Nutrition.html#fruits-vegetables">Fruits & Vegetables</a>
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
- 
-    
-    <section>
-      
-        <p>Subscribe for updates:</p>
-        <form action="subscribe.php" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </section>
+    <section id="exercise">
+        <h2>
+            Excercise Overview
+        </h2>
 
-    <!-- Additional content... -->
+        <p>To be active and moving is an important thing in our deaily lives. It could be as minimal as going out for a walk. The reason people should incorporate excercises to their routine could be the many benefits from </p>
+        <h2>Exercise Library</h2>
+    
+        <div class="exercise-category" id="calisthenics">
+            <h3>Calisthenics</h3>
+            <div class="exercise-card">
+                <h4>Push-ups</h4>
+                <p><strong>Sets:</strong> 3 | <strong>Reps:</strong> 15</p>
+                <P>Recommend 10 Reps for 3 Sets for beginners but even if you can't try as many you can crank out. OVer time you will notice the increase in reps and could do more and more as you get use to it.</P>
+            </div>
+            <div class="exercise-card">
+                <h4>Pull-ups</h4>
+                <p><strong>Sets:</strong> 3 | <strong>Reps:</strong> 10</p>
+            </div>
+            <div class="exercise-card">
+                <h4>Squats</h4>
+                <p><strong>Sets:</strong> 4 | <strong>Reps:</strong> 12</p>
+            </div>
+            <!-- Note to self add more calisthenics exercises as needed -->
+        </div>
+    
+        <div class="exercise-category" id="weights">
+            <h3>Weight Training</h3>
+            <div class="exercise-card">
+                <h4>Bench Press</h4>
+                <p><strong>Sets:</strong> 4 | <strong>Reps:</strong> 8</p>
+            </div>
+            <div class="exercise-card">
+                <h4>Deadlifts</h4>
+                <p><strong>Sets:</strong> 3 | <strong>Reps:</strong> 10</p>
+            </div>
+            <div class="exercise-card">
+                <h4>Dumbbell Rows</h4>
+                <p><strong>Sets:</strong> 3 | <strong>Reps:</strong> 12</p>
+            </div>
+            <!-- Add more weight training exercises as needed -->
+        </div>
+    
+        <div class="exercise-category" id="cardio">
+            <h3>Cardio</h3>
+            <div class="exercise-card">
+                <h4>Running</h4>
+                <p><strong>Duration:</strong> 30 minutes</p>
+            </div>
+            <div class="exercise-card">
+                <h4>Jump Rope</h4>
+                <p><strong>Sets:</strong> 3 | <strong>Duration:</strong> 5 minutes each</p>
+            </div>
+            <div class="exercise-card">
+                <h4>Cycling</h4>
+                <p><strong>Duration:</strong> 20 minutes</p>
+            </div>
+            <!-- Add more cardio exercises as needed -->
+        </div>
+    </section>
+   
+
+
 
     <footer>
         <p>&copy; 2023 Fitness Spec. All rights reserved.</p>
