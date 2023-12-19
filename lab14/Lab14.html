@@ -1,39 +1,109 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Fitness Spec</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="shortcut icon" type="image/x-icon" href="fitspec.ico">
+    <style>
+     
+
+     video {
+            width: 70%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
+        }
 
 
-
+    </style>
 </head>
 <body>
-    <nav><a href="../lab10/index.html">Home</a> <span>&#124;</span>
-        <a href="../lab04/skills.html">Excercise</a> <span>&#124;</span>
-        <a href="../lab03/contact.html">Nutrition</a> 
+    <header>
+        <img src="fitness-spec-logo.png" alt="Fitness Spec Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Excercise.html">Workouts</a></li>
+                <li class="dropdown">
+                    <a href="Nutrition.html" class="dropbtn">Nutrition</a>
+                    <div class="dropdown-content">
+                        <a href="Nutrition.html#protein">Protein</a>
+                        <a href="Nutrition.html#carbohydrates">Carbohydrates</a>
+                        <a href="Nutrition.html#caffeine">Caffeine</a>
+                        <a href="Nutrition.html#fats">Fats</a>
+                        <a href="Nutrition.html#sugar">Sugar</a>
+                        <a href="Nutrition.html#sodium">Sodium</a>
+                        <a href="Nutrition.html#fruits-vegetables">Fruits & Vegetables</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    </nav>
-    <H1>Welcome to Fitness Spec</H1>
-    <P>Need to loose weight, need to loose fat, need to gain muscles, or be strong and have better endurance. Than Fitness Spec will help you with your needs. A full list of excercises and how to do them will be listed on the excercise page. While a page for nutrition will be listed on this one.</P>
-    <h2>Pick your Excercise</h2>
-    <p>Upper body</p>
-    <p>Abs</p>
-    <p>Lower body </p>
-  
+    <main class="main-content">
+        <section id="home">
+            <h1>Welcome to Fitness Spec!</h1>
+            <p>Your journey to a healthier lifestyle starts here with Fitness Spec. </p>
+        </section>
 
-    <main>
-        <input type="radio" id="Option1" Name="Choice 1">
-        <label for="Option1">Choice 1</label>
-        <input type="radio" id="Option2" Name="Choice 2">
-        <label for="Option2">Choice2</label><br>
-        <input type="submit" value="Send form"> <br>
-        <textarea id="Questions" name="Questions" rows="3" cols="30"></textarea>
+        <section id="exercise">
+            <div class="content-container">
+                <div class="image-section">
+                    <video width="640" height="360" controls>
+                        <source src="Excercise.mp4" type="video/mp4" alt="Excercise Animation">
+                    </video>
+                </div>
+                <div class="description-section">
+                    <p>Regular exercise is crucial for maintaining good health. It helps improve cardiovascular health, build muscle strength, and boost overall well-being. Incorporate a mix of cardio, strength training, and flexibility exercises into your routine for optimal results.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="nutrition">
+            <div class="content-container">
+                <div class="description-section">
+                    <p>Proper nutrition plays a key role in supporting your fitness goals. Focus on a balanced diet that includes a variety of fruits, vegetables, lean proteins, and whole grains. Stay hydrated and be mindful of portion sizes to fuel your body effectively.</p>
+                </div>
+                <div class="image-section">
+                    <video width="640" height="360" controls>
+                        <source src="Nutrition.mp4" type="video/mp4" alt="Nutrition Animation">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="sleep">
+            <div class="content-container">
+                <div class="image-section">
+                    <video width="640" height="360" controls>
+                        <source src="Sleep.mp4" type="video/mp4" alt="Sleep Animation">
+                    </video>
+                </div>
+                <div class="description-section">
+                    <p>Quality sleep is essential for recovery and overall health. Aim for 7-9 hours of uninterrupted sleep each night. Create a relaxing bedtime routine, maintain a comfortable sleep environment, and prioritize consistent sleep patterns to enhance your well-being.<p>
+                </div>
+            </div>
+        </section>
+        
+       <div class="sub">
+        <section>
+            <H1>Subscribe for updates:</h1>
+            <form action="subscribe.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        </div>
+
     </main>
-    
+
     <footer>
-    <hr>
-    <p>&copy;2023 <span id="tagline">Fitness Spec</span></p>
+        <p>&copy; 2023 Fitness Spec. All rights reserved.</p>
     </footer>
 </body>
 </html>
