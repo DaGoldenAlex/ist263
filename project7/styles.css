@@ -1,4 +1,10 @@
-#home p, {}
+#home p { 
+    border: 2px solid rgb(255, 255, 255);
+    padding: 25px;
+    border-radius:10px;
+    background-color: #800000;
+    width: 40%;
+}
 
 #exercise1 p,
     #nutrition1 p,
