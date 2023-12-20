@@ -1,5 +1,49 @@
+video {
+    width: 70%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
 
-    body  {
+h1,
+P {
+font-family: "Rubik Bubbles" cursive;
+}
+
+
+#modal {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 250px;
+background-color: #630000;
+border: 1px solid #000000;
+display: none;
+padding: 15px;
+box-sizing: border-box;
+}
+#subscribe {
+background-color: rgb(104, 0, 0);
+padding: 10px;
+text-align: center;
+cursor: pointer;
+
+}
+
+#subscribe:hover {
+text-decoration: underline;
+color: red;
+}
+#close-button {
+text-align: right;
+margin: 0px;
+}
+#font-modal {
+font-family: "Rubik Bubbles", cursive;
+}
+   
+   body  {
         font-family: "Montserrat", cursive;
         margin: 0;
     padding: 0;
