@@ -1,3 +1,14 @@
+#home p, {}
+
+#exercise1 p,
+    #nutrition1 p,
+        #sleep1 p {
+            border: 2px solid rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10%;
+            margin: 0;
+            background-color: #800000;
+        }
 video {
     width: 70%; 
     height: auto; 
