@@ -1,10 +1,72 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+#home p { 
+    border: 2px solid rgb(255, 255, 255);
+    padding: 25px;
+    border-radius:10px;
+    background-color: #800000;
+    width: 40%;
+}
+
+#exercise1 p,
+    #nutrition1 p,
+        #sleep1 p {
+            border: 2px solid rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10%;
+            margin: 0;
+            background-color: #800000;
+        }
+video {
+    width: 70%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+h1,
+P {
+font-family: "Rubik Bubbles" cursive;
+}
+
+
+#modal {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 250px;
+background-color: #630000;
+border: 1px solid #000000;
+display: none;
+padding: 15px;
+box-sizing: border-box;
+}
+#subscribe {
+background-color: rgb(104, 0, 0);
+padding: 10px;
+text-align: center;
+cursor: pointer;
+
+}
+
+#subscribe:hover {
+text-decoration: underline;
+color: red;
+}
+#close-button {
+text-align: right;
+margin: 0px;
+}
+#font-modal {
+font-family: "Rubik Bubbles", cursive;
+}
+   
+   body  {
+        font-family: "Montserrat", cursive;
+        margin: 0;
     padding: 0;
     background-color: #ff0000; 
     color: #ffffff; 
-}
+      }
 
 header {
     background-color: #990000; 
@@ -118,4 +180,23 @@ img {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+#exercise {
+    padding: 20px;
+}
+
+.exercise-category {
+    margin-bottom: 30px;
+}
+
+.exercise-card {
+    background-color: rgb(55, 0, 0);
+    border: 1px solid #7f2121;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.exercise-card h4 {
+    margin-top: 0;
 }

@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Fitness Spec</title>
+    <title>Fitness-Spec</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-    <link rel="shortcut icon" type="image/x-icon" href="fitspec.ico">
-    <style>
-     
 
-     video {
-            width: 70%; 
-            height: auto; 
-            display: block; 
-            margin: 0 auto; 
+
+    <link rel="shortcut icon" type="image/x-icon" href="fitspec.ico">
+
+    <style>
+       #exercise1 p,
+        #nutrition1 p,
+        #sleep1 p
+        #home p {
+            border: 2px solid rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10%;
+            margin: 0;
+            background-color: #800000;
+        }
+        
+    </style>
+    <script>
+        function openModal() {
+          document.getElementById("modal").style.display = "block";
+        }
+        function closeModal() {
+          document.getElementById("modal").style.display = "none";
         }
 
-
-    </style>
+      </script>
 </head>
 <body>
     <header>
@@ -27,7 +39,13 @@
         <nav>
             <ul>
                 <li><a href="Home.html">Home</a></li>
-                <li><a href="Excercise.html">Workouts</a></li>
+                <li class="dropdown">
+                    <a href="Excercise.html" class="dropbtn">Excercise</a>
+                <div class="dropdown-content">
+                <a href="Excercise.html#Calisenthics">Calisthenics</a>
+                <a href="Nutrition.html#Weights">Weights</a>
+                <a href="Nutrition.html#Cardio">Cardio</a>
+                </div>
                 <li class="dropdown">
                     <a href="Nutrition.html" class="dropbtn">Nutrition</a>
                     <div class="dropdown-content">
@@ -47,59 +65,64 @@
     <main class="main-content">
         <section id="home">
             <h1>Welcome to Fitness Spec!</h1>
-            <p>Your journey to a healthier lifestyle starts here with Fitness Spec. </p>
+            <p>Your journey to a healthier lifestyle starts here with Fitness Spec. The creation of Fitness Spec is dedicated to help those who want to learn more about what makes there fitness jouney important to every spec of the way!</p>
         </section>
 
-        <section id="exercise">
+        <section id="exercise1">
+            <h2>Excercise</h2>
             <div class="content-container">
                 <div class="image-section">
-                    <video width="640" height="360" controls>
-                        <source src="Excercise.mp4" type="video/mp4" alt="Excercise Animation">
-                    </video>
+                    <video width="640" height="360" controls="">
+                        <source src="Excercise.mp4" type="video/mp4">
+                     </video>
                 </div>
                 <div class="description-section">
                     <p>Regular exercise is crucial for maintaining good health. It helps improve cardiovascular health, build muscle strength, and boost overall well-being. Incorporate a mix of cardio, strength training, and flexibility exercises into your routine for optimal results.</p>
                 </div>
             </div>
         </section>
-
-        <section id="nutrition">
+        <h2>Nutrition</h2>
+        <section id="nutrition1">
             <div class="content-container">
                 <div class="description-section">
                     <p>Proper nutrition plays a key role in supporting your fitness goals. Focus on a balanced diet that includes a variety of fruits, vegetables, lean proteins, and whole grains. Stay hydrated and be mindful of portion sizes to fuel your body effectively.</p>
                 </div>
                 <div class="image-section">
                     <video width="640" height="360" controls>
-                        <source src="Nutrition.mp4" type="video/mp4" alt="Nutrition Animation">
+                        <source src="Nutrition.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
         </section>
-
-        <section id="sleep">
+        </section>
+        <h2>Sleep</h2>
+        <section id="sleep1">
             <div class="content-container">
                 <div class="image-section">
                     <video width="640" height="360" controls>
-                        <source src="Sleep.mp4" type="video/mp4" alt="Sleep Animation">
+                        <source src="Sleep.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="description-section">
-                    <p>Quality sleep is essential for recovery and overall health. Aim for 7-9 hours of uninterrupted sleep each night. Create a relaxing bedtime routine, maintain a comfortable sleep environment, and prioritize consistent sleep patterns to enhance your well-being.<p>
+                    <p>Quality sleep is essential for recovery and overall health. Aim for 7-9 hours of uninterrupted sleep each night. Create a relaxing bedtime routine, maintain a comfortable sleep environment, and prioritize consistent sleep patterns to enhance your well-being.</p>
                 </div>
-            </div>
+                    </div>
+                        </div>
         </section>
         
-       <div class="sub">
-        <section>
-            <H1>Subscribe for updates:</h1>
-            <form action="subscribe.php" method="post">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
+        
+        <p id="subscribe" onclick="openModal();">Subscribe for Updates</p>
+        <div id="modal">
+          <p id="close-button" onclick="closeModal();">X</p>
+          <p>Subscribe To Our Newsletter</p>
+          <form id="font-modal">
+           <label>Name:</label>
+            <input type="text" id="name" name="name" >
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" >
+            <input type="submit" value="Subscribe" >
+          </form>
         </div>
-
     </main>
 
     <footer>
