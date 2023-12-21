@@ -38,12 +38,19 @@
         </nav>
     </header>
     <section id="exercise">
-        <h2>
-            Excercise Overview
-        </h2>
-
-        <p>To be active and moving is an important thing in our deaily lives. It could be as minimal as going out for a walk. The reason people should incorporate excercises to their routine could be the many benefits from </p>
-        <h2>Exercise Library</h2>
+        
+        <main class="main-content">
+            <section id="home">
+                <h2>
+                    Excercise Overview
+                </h2>
+                <p>To be active and moving is an important thing in our deaily lives. It could be as minimal as going out for a walk. The reason people should incorporate excercises to their routine could be the many benefits from</p>
+            </section>
+            <section id="home">
+                <u><h2>
+                    Excercise Library
+                </h2></u>
+         
     
         <div class="exercise-category" id="calisthenics">
             <h3>Calisthenics</h3>
@@ -99,6 +106,18 @@
 
 
 
+    <p id="subscribe" onclick="openModal();">Subscribe for Updates</p>
+    <div id="modal">
+      <p id="close-button" onclick="closeModal();">X</p>
+      <p>Subscribe To Our Newsletter</p>
+      <form id="font-modal">
+       <label>Name:</label>
+        <input type="text" id="name" name="name" >
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" >
+        <input type="submit" value="Subscribe" >
+      </form>
+    </div>
     <footer>
         <p>&copy; 2023 Fitness Spec. All rights reserved.</p>
     </footer>
