@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="shortcut icon" type="image/x-icon" href="fitspec.ico">
+    <script>
+        function openModal() {
+          document.getElementById("modal").style.display = "block";
+        }
+        function closeModal() {
+          document.getElementById("modal").style.display = "none";
+        }
+
+      </script>
 </head>
 <body>
     <header>
@@ -44,7 +53,8 @@
                 <h2>
                     Excercise Overview
                 </h2>
-                <p>To be active and moving is an important thing in our deaily lives. It could be as minimal as going out for a walk. The reason people should incorporate excercises to their routine could be the many benefits from</p>
+                <p>To be active and moving is an important thing in our deaily lives. It could be as minimal as going out for a walk. The reason people should incorporate excercises to their routine could be the many benefits from stamina, strength, and health.</p>
+                <p> When performing an excercises below it's important to know that you may not reach the amount of reps listed, but try to do as many as you can </p>
             </section>
             <section id="home">
                 <u><h2>
@@ -105,7 +115,6 @@
    
 
 
-
     <p id="subscribe" onclick="openModal();">Subscribe for Updates</p>
     <div id="modal">
       <p id="close-button" onclick="closeModal();">X</p>
@@ -118,8 +127,10 @@
         <input type="submit" value="Subscribe" >
       </form>
     </div>
+    
     <footer>
         <p>&copy; 2023 Fitness Spec. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
