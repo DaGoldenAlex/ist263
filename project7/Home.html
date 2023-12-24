@@ -12,21 +12,26 @@
 
 
     <script>
-        function openModal() {
+    function openModal() {
           document.getElementById("modal").style.display = "block";
         }
-        function closeModal() {
+    function closeModal() {
           document.getElementById("modal").style.display = "none";
         }
 
-        function handleKeyPress(event) {
+    function handleKeyPress(event) {
 
             if (event.keyCode === 13 || event.keyCode === 32) {
                 event.preventDefault();
                 openModal();
-  }
-}
-
+        }
+    }
+    function handleCloseKeyPress(event) {
+        if (event.keyCode === 13 || event.keyCode === 32) {
+            event.preventDefault();
+            closeModal();
+        }
+    }
       </script>
 </head>
 <body>
@@ -112,7 +117,7 @@
             Subscribe for Updates
           </p>
         <div id="modal">
-          <p id="close-button" onclick="closeModal();">X</p>
+            <p id="close-button" tabindex="0" role="button" onclick="closeModal();" onkeydown="handleCloseKeyPress(event);"> X </p>
           <p>Subscribe To Our Newsletter</p>
           <form id="font-modal">
            <label for="name"> Name:</label>
