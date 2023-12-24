@@ -19,6 +19,14 @@
           document.getElementById("modal").style.display = "none";
         }
 
+        function handleKeyPress(event) {
+
+            if (event.keyCode === 13 || event.keyCode === 32) {
+                event.preventDefault();
+                openModal();
+  }
+}
+
       </script>
 </head>
 <body>
@@ -99,7 +107,10 @@
                         </section>
         
         
-        <p id="subscribe" onclick="openModal();">Subscribe for Updates</p>
+     
+        <p id="subscribe" tabindex="0" role="button" onclick="openModal();" onkeydown="handleKeyPress(event);">
+            Subscribe for Updates
+          </p>
         <div id="modal">
           <p id="close-button" onclick="closeModal();">X</p>
           <p>Subscribe To Our Newsletter</p>
